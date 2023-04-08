@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="img/icon.png">
+
+	<title>Trivia Educación Vial - Aprendé programando</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Estilos del sitio -->
+	<link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<main role="main" class="container fill">
+
+		<nav class="navbar navbar-expand-md navbar-dark trivia-bg-purpura">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Página Principal</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="instrucciones.html">Instrucciones</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="acerca_de.html">Acerca de</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="pantalla-inicio" class="container">
+			<a id="inicio-boton-jugar" class="btn btn-lg btn-primary px-4 trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow" href="#" role="button">JUGAR</a>
+		</div>
+
+		<div id="header" class="row d-none">
+			<div class="col-12 px-0">
+				<img src="img/header_desktop.jpg" class="d-none d-md-block w-100" />
+				<img src="img/header_mobile.jpg" class="d-block d-md-none w-100" />
+			</div>
+		</div>
+
+		<div id="pantalla-juego" class="d-none container px-1 px-md-3  px-lg-5">
+
+			<div class="row">
+				<div class="col-12 col-md-6 mt-4">
+					<div class="trivia-tarjeta trivia-bg-blanco trivia-box-shadow">
+						<div class="p-2 p-md-3 trivia-bg-naranja-claro titulo">
+							<span id="pregunta-numero">x)</span>
+							<span id="pregunta-texto">***************</span>
+						</div>
+
+						<div class="p-2 p-md-3 text-center cuerpo">
+							<img id="pregunta-imagen" src="img/preguntas/preg1.jpg">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 mt-4">
+					<div id="opciones">
+						<div class="opc1 p-2 p-md-3 trivia-opcion trivia-bg-blanco trivia-box-shadow">
+							<input type="radio" name="respuesta" id="opc1" value="Opción 1"> <label for="opc1">Opción 1</label>
+						</div>
+
+						<div class="opc2 p-2 p-md-3 trivia-opcion trivia-bg-blanco trivia-box-shadow">
+							<input type="radio" name="respuesta" id="opc2" value="Opción 2"> <label for="opc2">Opción 2</label>
+						</div>
+
+						<div class="opc3 p-2 p-md-3 trivia-opcion trivia-bg-blanco trivia-box-shadow">
+							<input type="radio" name="respuesta" id="opc3" value="Opción 3"> <label for="opc3">Opción 3</label>
+						</div>
+					</div>
+					<div class="p-1 text-right">
+						<a id="boton-verificar" class="btn btn-primary trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow" href="#">Verificar</a>
+						<a id="boton-siguiente" class="d-none btn btn-primary trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow" href="#">Siguiente</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="pantalla-resultado" class="d-none container px-1 px-md-3  px-lg-5">
+			<div class="row">
+				<div class="col-12 col-md-10 col-lg-10 mx-auto mt-5">
+					<div  class="trivia-tarjeta trivia-bg-blanco trivia-box-shadow">
+						<div class="p-2 p-md-3 trivia-bg-rosa-obscuro titulo">
+							<h4>RESULTADO</h4>
+						</div>
+
+						<div class="container p-2 p-md-3 trivia-texto-color-rosa-obscuro">
+
+							<div class="row align-items-center">
+								<div class="col-12 col-md-5 text-center">
+									<img src="img/feedback-bien.png" class="trivia-resultado-bien" />
+									<img src="img/feedback-mal.png" class="trivia-resultado-mal" />
+								</div>
+								<div class="col-12 col-md-7">
+									<h1 class="mb-2 trivia-texto-color-verde trivia-resultado-bien">¡Bien hecho!</h1>
+									<p class="mb-2 trivia-resultado-bien">
+										Tus conocimientos sobre The Legend of Zelda son excelentes!
+									</p>
+									<h1 class="mb-2 trivia-texto-color-rojo trivia-resultado-mal">¡Oh no!</h1>
+									<p class="mb-2 trivia-resultado-mal">
+										Tenés que seguir practicando.
+									</p>
+									<h2><span id="resultado-puntos"></span>/10 Puntos</h2>
+								</div>
+							</div>
+
+							<div class="row align-items-center">
+								<div class="col-12 text-right">
+									<a id="resultado-boton-volver-a-jugar" class="btn btn-lg btn-primary px-4 trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow" href="#" role="button">VOLVER A JUGAR</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- script general para elementos gráficos del template html -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<!-- scripts del juego -->
+	<script type="text/javascript" src="js/datos_preguntas.js"></script>
+	<script type="text/javascript" src="js/mi_codigo.js"></script>
+
+
+</body>
+</html>
