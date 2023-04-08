@@ -1,0 +1,373 @@
+/**********reset**********/
+html,body
+{
+	width:100%;
+	height:100%;
+	padding:0;
+	border:0;
+	margin:0;
+	font-family:Roboto,sans-serif;
+}
+
+body
+{
+
+	background-color:#171717;
+
+}
+
+.trivia-border-none
+{
+	border:none;
+}
+
+h1,h2,h3,h4,h5
+{
+	padding:0;
+	margin:0;
+}
+
+nav
+{
+	z-index:99999;
+}
+
+.container
+{
+	width:100%;
+	max-width:100%;
+
+	max-width:1024px;
+
+	/*height:100%;*/
+
+	padding:0;
+}
+
+.row
+{
+	margin:0;
+}
+
+main
+{
+
+
+	background-image:url(../img/fondozelda.png);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-size:100% auto;
+	background-color:white;
+
+	min-height:190px;
+
+}
+
+@media (min-width: 400px)
+{
+	main
+	{
+		min-height:490px;
+	}
+}
+
+@media (min-width: 1024px)
+{
+	main
+	{
+		min-height:700px;
+	}
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: initial;
+    background-color: initial;
+    border-color: initial;
+	outline:initial;
+}
+
+/*********estilos generales***********/
+.trivia-bg-purpura
+{
+	background-color:#3b4841;
+}
+
+.trivia-bg-rosa-obscuro
+{
+	background-color:#00422c;
+}
+
+.trivia-bg-salmon
+{
+	background-color:#FF585E;
+}
+
+.trivia-bg-naranja-claro
+{
+	background-color:#008a49;
+}
+
+.trivia-bg-naranja-obscuro,.trivia-bg-naranja-obscuro:hover
+{
+	background-color:#008a49;
+}
+
+.trivia-bg-verde
+{
+	background-color:#00B068;
+}
+
+.trivia-bg-blanco
+{
+	background-color:#FEFEFE;
+}
+
+
+.trivia-texto-color-rojo
+{
+	color:#C70029;
+}
+
+.trivia-texto-color-rosa-obscuro
+{
+	color:#000000;
+}
+
+.trivia-texto-color-celeste
+{
+	color:#0094BE;
+}
+
+.trivia-texto-color-naranja-claro
+{
+	color:#FF9400;
+}
+
+.trivia-texto-color-verde
+{
+	color:#00A327;
+}
+
+.trivia-box-shadow
+{
+	box-shadow:2px 2px 3px #555;
+}
+
+.btn.trivia-box-shadow:hover
+{
+	box-shadow:1px 1px 1px #444;
+}
+
+.trivia-text-shadow
+{
+	text-shadow:2px 2px 2px #444;
+}
+
+
+.trivia-tarjeta
+{
+	margin-bottom:40px;
+}
+
+.trivia-tarjeta .titulo
+{
+	color:white;
+}
+
+.trivia-tarjeta .cuerpo
+{
+	border:1px solid #B5B5B5;
+	border-top:0;
+}
+
+.trivia-tarjeta,.trivia-opcion
+{
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	overflow:hidden;
+}
+
+/******************inicio*******************/
+#pantalla-inicio
+{
+	background-color:#171717;
+	background-image:url(../img/bg_home.jpg);
+	background-size:contain;
+	background-position:center 56px;
+	background-repeat:no-repeat;
+
+	position:relative;
+
+	min-height: 100%;
+    height: 100%;
+
+	margin-top:-56px;
+}
+
+#inicio-logo
+{
+	position:absolute;
+	left:30px;
+	top:30px;
+}
+
+#inicio-boton-jugar
+{
+	position:absolute;
+	bottom:50px;
+	right:55px;
+}
+
+@media (min-width: 400px)
+{
+	#pantalla-inicio
+	{
+		height:55%;
+		min-height:490px;
+	}
+}
+
+@media (min-width: 1024px)
+{
+	#pantalla-inicio
+	{
+		height:100%;
+		min-height:700px;
+	}
+}
+
+/***************juego*****************/
+#pantalla-juego
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009881+1,f5ffff+77 */
+	background: rgb(0,152,129); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,152,129,1) 1%, rgba(245,255,255,0.1) 77%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,152,129,1) 1%,rgba(245,255,255,0.1) 77%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(111, 111, 111) 1%,rgba(245,255,255,0.1) 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009881', endColorstr='#f5ffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+.trivia-opcion
+{
+	margin-bottom:15px;
+	font-weight:bold;
+}
+
+.trivia-opcion.correcta
+{
+	color:white;
+	background-color:#00B068;
+}
+
+.trivia-opcion.erronea
+{
+	color:white;
+	background-color:#FF585E;
+}
+
+.trivia-opcion label
+{
+  display: inline;
+}
+
+#pregunta-imagen
+{
+	width:55%;
+	margin:auto;
+}
+
+#pregunta-numero,#pregunta-texto
+{
+	font-size:22px;
+	line-height:25px;
+
+}
+
+
+#pantalla-resultado
+{
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-size:100% auto;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009881+1,f5ffff+77 */
+	background: rgb(0,152,129); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(111, 111, 111) 20%, rgba(245,255,255,0.1) 77%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(111, 111, 111) 20%,rgba(245,255,255,0.1) 77%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(111, 111, 111) 20%,rgba(245,255,255,0.1) 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009881', endColorstr='#f5ffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+#pantalla-resultado h1,h2
+{
+	font-weight:bold;
+}
+
+
+#pantalla-resultado h1
+{
+	font-size:40px;
+}
+
+#pantalla-resultado h2
+{
+	font-size:35px;
+}
+
+#pantalla-resultado p
+{
+	font-size:25px;
+}
+
+#pantalla-resultado img
+{
+	width:60%;
+	margin:auto;
+}
+
+
+#pantalla-resultado .trivia-resultado-bien,
+#pantalla-resultado .trivia-resultado-mal
+{
+	display:none;
+}
+
+#pantalla-resultado.bien .trivia-resultado-bien
+{
+	display:block;
+}
+#pantalla-resultado.bien .trivia-resultado-mal
+{
+	display:none;
+}
+
+
+#pantalla-resultado.mal .trivia-resultado-mal
+{
+	display:block;
+}
+#pantalla-resultado.mal .trivia-resultado-bien
+{
+	display:none;
+}
+
+/***************Instrucciones, Acerca de*****************/
+
+#pantalla-instrucciones,#pantalla-acerca_de
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009881+1,f5ffff+77 */
+	background: rgb(0,152,129); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,152,129,1) 1%, rgba(245,255,255,0.1) 77%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,152,129,1) 1%,rgba(245,255,255,0.1) 77%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(111, 111, 111) 1%,rgba(245,255,255,0.1) 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009881', endColorstr='#f5ffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+#instrucciones .titulo, #acerca_de .titulo
+{
+	text-transform:uppercase;
+}
